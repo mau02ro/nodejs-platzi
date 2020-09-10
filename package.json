@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-platzi",
+  "version": "1.0.0",
+  "description": "Curso de Node.js - Platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mau02ro/nodejs-platzi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mau02ro/nodejs-platzi/issues"
+  },
+  "homepage": "https://github.com/mau02ro/nodejs-platzi#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
