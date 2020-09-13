@@ -24,7 +24,20 @@ const addMessage = (user, message) => {
 	})
 }
 
+const updateMessage = async (id, message) => {
+	return new Promise(async (resolve, reject) => {
+		if(!id || !message){
+			console.error('[messageController] No hay id o mensaje')
+			reject('Los datos sin incorrectos')
+		}
+
+		const response = await store.update(id, message)
+		resolve(response)
+	})
+}
+
 module.exports ={
 	addMessage,
-	getMessages
+	getMessages,
+	updateMessage
 }
